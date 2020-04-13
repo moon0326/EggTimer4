@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>carlosnz.eggtimer2</string>
+	<string>carlosnz.eggtimer4</string>
 	<key>connections</key>
 	<dict>
 		<key>251F013F-0729-46CB-9A8A-59FD5120BBFD</key>
@@ -546,7 +546,7 @@ x="{query}"
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>EGGTIMER v2.0
+	<string>EGGTIMER v4.0
 by Carl Smith (@CarlosNZ)
 =========================
 
@@ -562,7 +562,7 @@ Alarm icon by: CustomIconDesign
 http://www.customicondesign.com/
 
 Notification Centre integration uses
-DDMountainNotifier by Daij-Djan 
+DDMountainNotifier by Daij-Djan
 https://github.com/Daij-Djan/DDMountainNotifier/blob/master/README.md</string>
 	<key>uidata</key>
 	<dict>

@@ -1,5 +1,5 @@
 # -----------------------------------------
-# EggTimer 2 for Alfred 2
+# EggTimer 4 for Alfred 4
 # by Carl Smith (@CarlosNZ)
 # -----------------------------------------
 
@@ -8,13 +8,13 @@ source ./scripts/includes.sh
 
 ##RECENT TIMERS
 
-timerfile="$1"		
+timerfile="$1"
 
 #Extract info from txt file
 OLD_IFS=$IFS
 IFS=$'\n'
-timer_lines=( $(cat "$timerfile") )
-IFS=$OLD_IFS	
+timer_lines=($(cat "$timerfile"))
+IFS=$OLD_IFS
 
 rm -f "$timerfile" #Delete the timer file
 

@@ -1,10 +1,17 @@
-# EggTimer2
+# EggTimer 4 for Alfred 4
 
 ### Installation
 
-1. download zip of repo
-2. unzip the folder
-3. add folder to your `Alfred.alfredpreferences/workflows/` (you can find this folder by going to Alfred Preferences > "Advanced" tab > "Syncing" header > "Reveal in Finder" button )
+#### From Pacmax or Packal
+
+1. Download the .alfredworkflow file and double click on it
+
+#### From GitHub source
+
+1. Download the version of release you want
+2. Unzip the folder
+3. Add folder to your `Alfred.alfredpreferences/workflows/` directory
+   1. You can find this folder by going to `Alfred Preferences` > `Advanced` tab > `Syncing` header > `Reveal in Finder` button
 
 ### Basic Usage
 
@@ -18,9 +25,9 @@ For example:
 
 And then, in 30 minutes time…
 
-![](http://78.media.tumblr.com/d8a1b7a3e2a33d44ff78abdcfdb62d5a/tumblr_inline_mgjhkccWHa1qbs6wg.png)
+![](https://i.imgur.com/54jaJ0u.png)
 
-…[Growl](http://t.umblr.com/redirect?z=http%3A%2F%2Fgrowl.info%2F&t=MGE5ZWM0NTU3ODk3YWZiYjM5ODFmM2ExNWE2NGM3ZjBjY2U4YWU2Nyw3azZSTUV2NA%3D%3D&b=t%3AQQrKy8i7VPCWevxKPiooBg&p=http%3A%2F%2Fgeekzone.philosophicalzombie.net%2Fpost%2F40086558091%2Feggtimer&m=1) pops up to tell you that it’s time for the [coolest-ever fictional dwarf](http://t.umblr.com/redirect?z=http%3A%2F%2Fgameofthrones.wikia.com%2Fwiki%2FTyrion_Lannister&t=NWI1ZThiZDMxNTk4M2FhZjljNTkxMzgwN2YzZjgyOWFmNDAzYjdkZSw3azZSTUV2NA%3D%3D&b=t%3AQQrKy8i7VPCWevxKPiooBg&p=http%3A%2F%2Fgeekzone.philosophicalzombie.net%2Fpost%2F40086558091%2Feggtimer&m=1) to start cutting people down to (his) size.
+…EggTimer pops up to tell you that it’s time for the [coolest-ever fictional dwarf](https://gameofthrones.fandom.com/wiki/Tyrion_Lannister) to start cutting people down to (his) size.
 
 ### Additional Features
 
