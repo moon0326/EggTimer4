@@ -1,15 +1,18 @@
-Title:   EggTimer 2 for AlfredAuthor:  Carl J. Smith (@CarlosNZ)Date:    March 2013
+Title:   EggTimer 4 for Alfred 4
+Author:  Carl J. Smith (@CarlosNZ)
+Date:    April 2020
 CSS:     markdown_simonic.css
 
-
-#EggTimer 2 for Alfred
+#EggTimer 4 for Alfred 4
 ##by [Carl Smith (@CarlosNZ)](http://geekzone.philosophicalzombie.net/)
 
-###v2.0 [(What's new?)](./changelog.html) | 22 March 2013
+###v4.0 [(What's new?)](./changelog.html) | 12 April 2020
 
-![](screenshot.png) 
+![](screenshot.png)
 
-Welcome to the new-and-improved™ **EggTimer 2** for Alfred. EggTimer is a comprehensive timed notification system for Alfred. You can set multiple timers and alarms, with snooze, repeat, or auto-repeat functionality.
+Welcome to the new-and-improved™ **EggTimer 4** for Alfred 4 (this mostly means Growl removal + removal of Alfred < 3 support).
+
+EggTimer is a comprehensive timed notification system for Alfred. You can set multiple timers and alarms, with snooze, repeat, or auto-repeat functionality.
 
 Please note that EggTimer installs a startup item in OS X's [launchd](http://en.wikipedia.org/wiki/Launchd) daemon to check for and resume existing timers and alarms. This will consume no ongoing system resources other than running a short script at startup. You will be prompted to approve or deny the installation of this when you run EggTimer for the first time.
 
@@ -31,7 +34,7 @@ Create a basic countdown timer. You can also use ***HOURS:MINUTES*** for the dur
 
 ![](new_timer.png)
 
-Once the timer completes, it will display a notification (either Growl or Notification Centre, depending on your setting) and play an audible "alarm clock" sound.
+Once the timer completes, it will display a Notification Center notification and play an audible "alarm clock" sound.
 
 ![](timer_done.png)
 
@@ -53,7 +56,7 @@ Set an alarm for the specified time. The TIME format is fairly flexible, so all 
 
 ![](new_alarm.png)
 
-You can also add *daily* or *hourly* after the time to set a repeating alarm. eg. **"alarm 4pm daily Time to stop work."** 
+You can also add *daily* or *hourly* after the time to set a repeating alarm. eg. **"alarm 4pm daily Time to stop work."**
 
 > **repeat [*MINUTES*]**
 
@@ -115,4 +118,7 @@ And of course, big props to [Andrew Pepperrell](https://twitter.com/preppeller) 
 * Alarm icon by: [CustomIconDesign](http://www.customicondesign.com/)
 
 * Notification Centre integration uses
-[DDMountainNotifier](https://github.com/Daij-Djan/DDMountainNotifier/blob/master/README.md) by Daij-Djan 
+[DDMountainNotifier](https://github.com/Daij-Djan/DDMountainNotifier/blob/master/README.md) by Daij-Djan
+
+* Removed Growl references (deprecated) and removed support for older (< v4) Alfred versions: [stgarf](https://github.com/stgarf)
+  * (sorry, I'll take Alfred version detection and logic PRs -- was lazy)

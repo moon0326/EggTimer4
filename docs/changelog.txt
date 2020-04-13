@@ -1,8 +1,17 @@
-Title:   EggTimer•ChangelogAuthor:  Carl J. SmithDate:    March 2013
+Title:   EggTimer 4 for Alfred 4 Changelog
+Author:  Carl J. Smith
+Date:    April 2020
 CSS:     markdown_simonic.css
 
-#EggTimer for Alfred
+#EggTimer Changelog
 ##by [Carl Smith (@CarlosNZ)](http://geekzone.philosophicalzombie.net/)
+
+###v4.0
+####12 April 2020
+
+* Update to work with Alfred 4, remove Alfred 2/3
+* Bump Major to 4 to avoid name collisions + consistency with Alfred
+* Remove Growl since it's no longer maintained - all notification go to notification center
 
 ###v2.0
 ####22 March 2013

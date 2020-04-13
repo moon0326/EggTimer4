@@ -1,35 +1,35 @@
 # -----------------------------------------
-# EggTimer 2 for Alfred 2
+# EggTimer 4 for Alfred 4
 # by Carl Smith (@CarlosNZ)
 # -----------------------------------------
 
 #Load standard constants
 source ./scripts/includes.sh
 
-input=($1)	#parse arguments passed from input window into "input" array
+input=($1) #parse arguments passed from input window into "input" array
 mins=${input[0]}
-timerfile=${input[@]:1:$((${#input[@]}-1))}	
+timerfile=${input[@]:1:$((${#input[@]} - 1))}
 
 ####REPEAT TIMER
-	
+
 OLD_IFS=$IFS
 IFS=$'\n'
-timer_lines=( $(cat "$timerfile") )
+timer_lines=($(cat "$timerfile"))
 IFS=$OLD_IFS
 item=${timer_lines[1]}
 
-#Pluralization of "minute" 
+#Pluralization of "minute"
 if [ $mins = 1 ]; then
-	displaymins=minute
+  displaymins=minute
 else
-	displaymins=minutes
+  displaymins=minutes
 fi
 
 #Calculate Due time in Epoch seconds
 epochdue=$(date -v +$(echo $mins)M +%s)
 
 #Spawn the timer
-./scripts/timer.sh "$epochdue $mins $item"  > /dev/null 2>&1 &
+./scripts/timer.sh "$epochdue $mins $item" >/dev/null 2>&1 &
 
 #remove the old txt file.
 rm -f "$timerfile"
