@@ -28,6 +28,8 @@ timerdue=$(date -j -f %s $epochdue +%I:%M%p)
 #Create txt file for timer info
 filestring=$(echo $item | sed -e 's/[^A-Za-z0-9_-]/_/g' | cut -c-20) #limits filename to sensible characters and length
 
+mkdir -p "$EGGWD/running_timers"
+
 echo $$ >"$EGGWD/running_timers/timer-$filestring.tim"
 echo $item >>"$EGGWD/running_timers/timer-$filestring.tim"
 echo $epochdue >>"$EGGWD/running_timers/timer-$filestring.tim"
